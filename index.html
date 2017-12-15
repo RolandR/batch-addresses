@@ -1,0 +1,61 @@
+<!doctype html>
+
+<!--
+	========================================================================
+		
+	Copyright (C) 2017 Roland Rytz <roland@draemm.li>
+	Licensed under the GNU Affero General Public License Version 3
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	
+	========================================================================
+-->
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Batch Address Search
+		</title>
+
+		<meta name="author" content="Roland Rytz">
+		<meta name="robots" content="index, follow">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="./style.css?v=1" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+
+	
+	<body>
+		<h1>Batch Address Search</h1>
+
+		<div id="inputContainer">
+			<textarea id="addresses"></textarea>
+			<button id="startButton">Go</button>
+			<span>Open Requests: <span id="openRequests">0</span></span>
+		</div>
+
+		<div id="osmContainer">
+			<div id="osm"></div>
+		</div>
+		
+		<footer>
+			<p id="footer">by <a rel="author" target="_blank" href="http://draemm.li">Roland Rytz</a> - Source under the <a target="_blank" rel="license" href="./LICENSE">AGPL v3</a> on <a target="_blank" href="https://github.com/RolandR/batch-addresses">GitHub</a>.</p>
+		</footer>
+
+		<script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+		
+		<script type="text/javascript" src="./apiKey.js?v=1"></script>
+		<script type="text/javascript" src="./batch-addresses.js?v=1"></script>
+	</body>
+	
+</html>
